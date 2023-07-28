@@ -1,8 +1,8 @@
 [run]
-source = project_name
+source = python_inventory_api
 
 [report]
 omit =
     */python?.?/*
     */site-packages/nose/*
-    project_name/__main__.py
+    python_inventory_api/__main__.py
