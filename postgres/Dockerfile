@@ -1,4 +1,4 @@
-FROM postgres:15.3-alpine3.18
+FROM postgres:15.7-alpine3.18
 # This Dockerfile is for setting up a PostgreSQL database.
 # It uses the official PostgreSQL image and initializes the database
 # with a script located in the /docker-entrypoint-initdb.d/ directory.
