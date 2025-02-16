@@ -1,6 +1,6 @@
 
 # Base Image for builder
-FROM python:3.14-rc-slim-bookworm as builder
+FROM python:3.14-rc-alpine3.21 as builder
 
 # Install Requirements
 COPY requirements.txt /
@@ -8,7 +8,7 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /wheels -r requirements.txt
 
 
 # Build the app image
-FROM python:3.14-rc-slim-bookworm
+FROM python:3.14-rc-alpine3.21
 
 # Create directory for the app user
 RUN mkdir -p /home/app
